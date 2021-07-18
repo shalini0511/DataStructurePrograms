@@ -9,6 +9,7 @@ namespace DSProgram
             Console.WriteLine("Data Structure Programs!");
             Console.WriteLine("1.Unordered List");
             Console.WriteLine("2.ordered List");
+            Console.WriteLine("3.Balanced Paranthesis");
             int check = Convert.ToInt32(Console.ReadLine());
             switch (check)
             {
@@ -17,6 +18,19 @@ namespace DSProgram
                     break;
                 case 2:
                     OrderedList.Ordered();
+                    break;
+                case 3:
+                    char[] expression = "(5+6)∗(7+8)/(4+3)(5+6)∗(7+8)/(4+3)".ToCharArray();
+                    BalancingParantheses.StackOperations stackOperations = new BalancingParantheses.StackOperations();
+                    bool result = stackOperations.Isbalanced(expression);
+                    if (result)
+                    {
+                        Console.WriteLine("Parantheses Balanced");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Parantheses not Balanced");
+                    }
                     break;
 
             }

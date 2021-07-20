@@ -11,6 +11,7 @@ namespace DSProgram
             Console.WriteLine("2.ordered List");
             Console.WriteLine("3.Balanced Paranthesis");
             Console.WriteLine("4.Banking Cash Counter");
+            Console.WriteLine("5.Palindrome Checker");
             int check = Convert.ToInt32(Console.ReadLine());
             switch (check)
             {
@@ -36,6 +37,11 @@ namespace DSProgram
                 case 4:
                     BankingCashCounter banking = new BankingCashCounter();
                     banking.MaintainQueue();
+                    break;
+                case 5:
+
+                    PalindromeChecker<char> checker = new PalindromeChecker<char>();
+                    checker.IsPalindrome();
                     break;
 
             }

@@ -12,6 +12,7 @@ namespace DSProgram
             Console.WriteLine("3.Balanced Paranthesis");
             Console.WriteLine("4.Banking Cash Counter");
             Console.WriteLine("5.Palindrome Checker");
+            Console.WriteLine("6.print calender");
             int check = Convert.ToInt32(Console.ReadLine());
             switch (check)
             {
@@ -42,6 +43,9 @@ namespace DSProgram
 
                     PalindromeChecker<char> checker = new PalindromeChecker<char>();
                     checker.IsPalindrome();
+                    break;
+                case 6:
+                    Calender.PrintCalender();
                     break;
 
             }
